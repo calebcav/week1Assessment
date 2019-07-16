@@ -75,7 +75,8 @@ public class BasicArrayUtilsTest {
     @Test
     public void reverseArrayTest2() {
         // Given
-        String[] expected = {"Somewhere", "over", "the", "rainbow"};
+        String[] input = {"Somewhere", "over", "the", "rainbow"};
+        String[] expected = {"rainbow", "the", "over", "Somewhere"};
 
         // When
         String[] actual = BasicArrayUtils.reverse(BasicArrayUtils.reverse(expected));
